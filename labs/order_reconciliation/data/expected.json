@@ -1,0 +1,25 @@
+{
+  "latest": [
+    {"row_id": 3, "order_id": "ORD-100", "revision": 2, "status": "PAID", "amount_cents": 1299},
+    {"row_id": 5, "order_id": "ORD-200", "revision": 2, "status": "CANCELLED", "amount_cents": 4500},
+    {"row_id": 8, "order_id": "ORD-300", "revision": 2, "status": "PAID", "amount_cents": 2600},
+    {"row_id": 14, "order_id": "ORD-800", "revision": 1, "status": "PAID", "amount_cents": 0},
+    {"row_id": 16, "order_id": "ORD-900", "revision": 1, "status": "OPEN", "amount_cents": 700}
+  ],
+  "rejected": [
+    {"row_id": 9, "reason": "invalid_amount"},
+    {"row_id": 10, "reason": "missing_order_id"},
+    {"row_id": 11, "reason": "invalid_revision"},
+    {"row_id": 12, "reason": "invalid_status"},
+    {"row_id": 13, "reason": "invalid_amount"},
+    {"row_id": 15, "reason": "invalid_amount"}
+  ],
+  "summary": {
+    "input_rows": 16,
+    "rejected_rows": 6,
+    "superseded_rows": 5,
+    "latest_orders": 5,
+    "paid_orders": 3,
+    "paid_cents": 3899
+  }
+}
