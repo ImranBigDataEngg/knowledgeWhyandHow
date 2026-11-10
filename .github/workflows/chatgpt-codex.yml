@@ -1,0 +1,23 @@
+
+name: ChatGPT & Codex Plugin Autopilot
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  autopilot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Analyze repository
+        uses: imMamdouhaboammar/chatgpt-codex-plugin-autopilot@v0.8.0
+        with:
+          path: '.'
+          action: 'analyze'
+          summary: 'true'
