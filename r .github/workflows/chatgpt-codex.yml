@@ -18,6 +18,6 @@ jobs:
       - name: Analyze repository
         uses: imMamdouhaboammar/chatgpt-codex-plugin-autopilot@v0.8.0
         with:
-          path: '.'
+          path: '.github/workflows/chatgpt-codex.yml'
           action: 'analyze'
           summary: 'true'
